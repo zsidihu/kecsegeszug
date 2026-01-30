@@ -461,6 +461,7 @@ ul.kecseges li.info-bar div .shoutbox {
 	display: inline-block;
 	margin: 0;
 	padding: 0;
+	height: 300px;
 	width: 100%;
 }
 
