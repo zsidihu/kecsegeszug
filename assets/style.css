@@ -1,0 +1,897 @@
+*, *:before, *:after {
+	outline: 0;
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	 box-sizing: inherit;
+}
+
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	 box-sizing: border-box;
+}
+
+body {
+	background-color: #F9F9F9;
+	font: 16px/1.2 Tahoma, Helvetica, Arial, Sans-Serif;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+blockquote {
+	background-color: #EEE;
+	border-left: 3px solid #F90;
+	margin: 0;
+	padding: 5px 15px;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+input {
+	vertical-align: middle;
+}
+
+hr {
+	border: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+ul, dl {
+	font-size: 0px;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+select {
+	border: 1px solid #EFEFEF;
+	font-size: 14px;
+	padding: 7px;
+	width: 100%;
+}
+
+h4 {
+	font-weight: normal;
+	font-size: 1.0em;
+	margin: 0 0 15px 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+
+.cookie {
+	background-color: rgba(230, 230, 230, 0.95);
+	color: #666;
+	font-size: 15px;
+	padding: 10px 0;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+	z-index: 5;
+}
+
+.cookie a {
+	background-color: #8AC007;
+	color: #FFF;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 6px 12px;
+	text-decoration: none;
+}
+
+.tartalom {
+	background-color: #FFF;
+	border: 1px solid #EFEFEF;
+	margin: 0 auto;
+	width: 90%;
+}
+
+.bottom-curls {
+	position: relative;
+}
+
+.bottom-curls:before, .bottom-curls:after {
+	background: #777;
+	bottom: 15px;
+	content: "";
+	max-width: 300px;
+	max-height: 300px;
+	position: absolute;
+	left: 10px;
+	top: 90%;
+	width: 50%;
+	z-index: -1;
+
+	box-shadow: 0 15px 10px #777;
+	transform: rotate(-3deg);
+}
+
+.bottom-curls:after {
+	left: auto;
+	transform: rotate(3deg);
+	right: 10px;
+}
+
+/**
+@Felső tartomány
+**/
+ul.felso li {
+	background-color: #30495a;
+	color: #FFF;
+	display: inline-block;
+	width: 50%;
+}
+
+ul.felso li dl {
+	color: #FFF;
+	font-size: 13px;
+}
+
+ul.felso li span {
+	color: #FFF;
+	display: inline-block;
+	font-size: 13px;
+	padding: 6px 8px;
+}
+
+ul.felso li dl dt {
+	display: inline-block;
+	margin-left: 5px;
+	position: relative;
+}
+
+ul.felso li dl dt a {
+	color: #FFF;
+	display: inline-block;
+	padding: 6px 12px;
+	text-decoration: none;
+}
+
+ul.felso li dl dt:hover .drop-down {
+	display: block;
+}
+
+ul.felso li dl dt a i {
+	margin-right: 8px;
+}
+
+ul.felso li dl dt .drop-down {
+	display: none;
+	background-color: rgba(48, 73, 90, 0.7);
+	color: white;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	text-align: left;
+	top: 27px;
+	white-space: nowrap;
+	width: 180px;
+	z-index: 999;
+}
+
+ul.felso li dl dt .drop-down dt {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+ul.felso li dl dt .drop-down dt a {
+	color: white;
+	display: inline-block;
+	padding: 6px 12px;
+	width: 100%;
+}
+
+ul.felso li dl dt .drop-down dt a:hover {
+	background-color: rgba(48, 73, 90, 0.8);
+}
+
+/**
+@Középső tartomány
+**/
+ul.kozepso {
+	background: transparent url('../images/logo.jpg') no-repeat;
+	background-size: cover;
+	padding: 10px;
+}
+
+ul.kozepso li {
+	display: block;
+	vertical-align: middle;
+}
+
+ul.kozepso li a {
+	color: #36424A;
+	display: inline-block;
+	font-size: 14px;
+	margin: 1px;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+ul.kozepso li a i {
+	margin-right: 5px;
+}
+
+ul.kozepso li h2 {
+	color: white;
+	font-size: 22px;
+	font-weight: normal;
+	margin-bottom: 40px;
+}
+
+ul.kozepso li h2 p {
+	font-size: 32px;
+	margin: 5px 0;
+}
+
+ul.kozepso li .banner {
+	padding-top: 20px;
+}
+
+/**
+@Tartalom
+**/
+ul.kecseges {
+	border-top: 1px solid #EFEFEF;
+}
+
+ul.kecseges li {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+ul.kecseges li:first-child {
+	width: 75%;
+}
+
+ul.kecseges li:last-child {
+	width: 25%;
+}
+
+/**
+@Hírfolyam
+**/
+ul.kecseges li div {
+	display: block;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	vertical-align: top;
+}
+
+ul.kecseges li div h3 {
+	clear: left;
+	font-size: 1.3rem;
+	font-weight: normal;
+	margin: 0;
+	padding: 8px 16px;
+}
+
+ul.kecseges li div i {
+	margin-right: 5px;
+}
+
+/**
+@Hírfolyam osztályok
+**/
+ul.kecseges li.news-bar div {
+	border: 1px solid transparent;
+	margin-right: 10px;
+}
+
+ul.kecseges li.news-bar div.hr {
+	border-top: 1px solid #F90;
+	margin: 10px 0;
+}
+
+ul.kecseges li.news-bar div form {
+}
+
+ul.kecseges li.news-bar div form label {
+	background: #FFF url('../images/upload.png') no-repeat center center;
+	cursor: pointer;
+	display: block;
+	height: 128px;
+	width: 128px;
+}
+
+ul.kecseges li.news-bar div form input[type="file"] {
+	position: fixed;
+	top: -1000px;
+}
+
+
+ul.kecseges li.news-bar div .polaroid-images {
+	margin: 10px 0;
+	text-align: center;
+}
+
+ul.kecseges li.news-bar div .polaroid-images div,
+ul.kecseges li.news-bar div .polaroid-images form {
+	background: #F5F5F5;
+	display: inline-block;
+	padding: 3px 3px 6px;
+	margin: 5px;
+	position: relative;
+	text-align: center;
+	z-index: 1;
+}
+
+ul.kecseges li.news-bar div .polaroid-images form:after {
+	color: #AAA;
+	content: attr(data-title);
+	font-size: 12px;
+	position: relative;
+	top: 3px;
+}
+
+ul.kecseges li.news-bar div .polaroid-images div .title {
+	color: #AAA;
+	display: inline-block;
+	font-size: 12px;
+	position: relative;
+	text-decoration: none;
+	top: 3px;
+	width: 128px;
+}
+
+ul.kecseges li.news-bar div .polaroid-images div .title[href]:hover{
+	color: #666;
+}
+
+ul.kecseges li.news-bar div .polaroid-images div .icn {
+	background-color: #FFF;
+	color: #0A0;
+	display: inline-block;
+	font-size: 16px;
+	padding: 5px;
+	position: absolute;
+	right: 3px;
+	text-decoration: none;
+	top: 3px;
+	z-index: 2;
+
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	 border-bottom-left-radius: 10px;
+}
+
+ul.kecseges li.news-bar div .polaroid-images img {
+	display: block;
+}
+
+ul.kecseges li.news-bar div h1 {
+	margin: 10px;
+}
+
+ul.kecseges li.news-bar div h3 {
+	color: #0054ed;
+	margin-top: 10px;
+	padding: 0 10px;
+}
+
+ul.kecseges li.news-bar div p {
+	padding: 0 10px;
+	overflow: hidden;
+}
+
+ul.kecseges li.news-bar div p .section {
+	color: #999;
+	display: inline-block;
+	font-size: 11px;
+	width: 49.5%;
+}
+
+ul.kecseges li.news-bar div p .section .icon {
+	color: #666;
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+ul.kecseges li.news-bar div p .section i {
+	margin-left: 10px;
+}
+
+ul.kecseges li.news-bar div .social {
+	border-bottom: 1px solid #EFEFEF;
+	border-top: 1px solid #EFEFEF;
+	margin-left: 10px;
+	padding: 15px;
+}
+
+ul.kecseges li.news-bar div .entry {
+	font-size: 14px;
+}
+
+ul.kecseges li.news-bar div .comments {
+	border-top: 2px solid #F90;
+	margin: 0 0 10px 10px;
+}
+
+ul.kecseges li.news-bar div .commentbox {
+	border: 1px solid #EFEFEF;
+	margin: 7px 0;
+}
+
+ul.kecseges li.news-bar div .commentbox p:first-child {
+	color: #999;
+	font-size: 11px;
+}
+
+ul.kecseges li.news-bar div p .h2,
+ul.kecseges li.news-bar div #html .h2 {
+	display: block;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+/**
+@Információs osztályok
+**/
+ul.kecseges li.info-bar div {
+	border: 1px solid #32a6f5;
+	margin: 10px 10px 10px 0;
+}
+
+ul.kecseges li.info-bar div h3 {
+	background-color: #32a6f5;
+	color: white;
+}
+
+ul.kecseges li.info-bar div p {
+	color: #2972A3;
+	padding: 5px;
+}
+
+ul.kecseges li.info-bar div .shoutbox {
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+ul.kecseges li.info-bar div .shoutbox iframe {
+	border: none;
+	display: inline-block;
+	height: 200px;
+	overflow: hidden;
+	width: 100%;
+}
+
+ul.kecseges li.info-bar div .shoutbox div {
+	border: none;
+	margin: 0 8px;
+	width: auto;
+}
+
+ul.kecseges li.info-bar div .shoutbox div textarea {
+	border: 1px solid #aaa;
+	font: 14px/1 Tahoma, Helvetica, Arial, Sans-Serif;
+	height: 28px; /* pixel méret + (padding * 2) */
+	overflow: hidden;
+	margin: 0;
+	padding: 7px;
+	resize: none;
+	width: 100%;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+}
+
+ul.kecseges li.info-bar div .shoutbox div input {
+	border: 1px solid #aaa;
+	color: #222;
+	cursor: pointer;
+	margin-bottom: 5px;
+	padding: 6px 12px;
+	width: 100%;
+
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;	
+}
+
+ul.kecseges li .google-maps {
+	float: left;
+}
+
+ul.kecseges li .koponyeg {
+	display: block;
+	padding: 7px 5px 5px 5px;
+	text-align: center;
+}
+
+ul.kecseges li .tagok,
+ul.kecseges li .latogatok {
+	display: block;
+	color: #2972A3;
+	font-size: 24px;
+	padding: 5px;
+	text-align: center;
+}
+
+ul.kecseges li .hirdetes {
+	display: block;
+	padding: 5px;
+	text-align: center;
+}
+
+/**
+@Lábjegyzet
+**/
+.labjegyzet {
+	color: #888;
+	margin: 30px auto;
+	/* text-align: center; */
+	width: 90%;
+}
+
+.labjegyzet li {
+	/*
+	display: inline-block;
+	font-size: 13px;
+	margin: 0 20px;
+	*/
+
+	display: block;
+	font-size: 13px;
+	margin: 0 20px 10px 20px;
+	text-align: left;
+}
+
+.labjegyzet li a {
+	color: #888;
+	text-decoration: none;
+}
+
+p.li:before {
+	content: "\2022";
+	margin-right: 3px;
+}
+
+/**
+@Signin, Signup
+**/
+form.urlap table {
+	background-color: #F5F5F5;
+	border: 1px solid #E5E5E5;
+	margin-top: 25px;
+	margin-bottom: 7px;
+	padding: 7px;
+}
+
+form.clear {
+	clear: both;
+}
+
+form.urlap table tr td {
+	font-size: 14px;
+}
+
+form.urlap table tr td a.kekgomb {
+	background-color: /*#2972A3;*/ #32a6f5;
+	border: 1px solid #EFEFEF;
+	color: #FFF;
+	display: block;
+	font-size: 14px;
+	padding: 6px 12px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+form.urlap table tr td input {
+	border: 1px solid #EFEFEF;
+	font-size: 14px;
+	padding: 7px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+form.urlap table tr td input[type="text"],
+form.urlap table tr td input[type="password"] {
+	width: 100%;
+}
+
+form.urlap table tr td input[type="submit"] {
+	background-color: /*#2972A3;*/ #32a6f5;
+	border: none;
+	color: #FFF;
+	cursor: pointer;
+	padding: 6px 12px;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+form.urlap table tr td.info {
+	color: #666;
+	font-size: 12px;
+}
+
+form.urlap table tr td.info a {
+	color: #00A;
+	text-decoration: none;
+}
+
+form.urlap table tr td a.format {
+	color: #666;
+	padding: 5px 10px;
+}
+
+form.urlap table tr td a.format i {
+	margin: 0;
+	padding: 0;
+}
+
+form.urlap table tr td a.format.R {
+	color: red;
+}
+
+form.urlap table tr td a.format.G {
+	color: green;
+}
+
+form.urlap table tr td a.format.B {
+	color: blue;
+}
+
+form.urlap table tr td a.format.on {
+	background-color: #D5D5D5;
+	color: #000;
+}
+
+form.urlap table tr td a.format.off {
+	background-color: transparent;
+	color: #000;
+}
+
+form.urlap table tr td textarea {
+	border: 1px solid transparent;
+	font: 13px/1 Tahoma, Helvetica, Arial, Sans-Serif;
+	height: 180px;
+	overflow: auto;
+	padding: 7px;
+	resize: none;
+	width: 100%;
+}
+
+form.urlap table tr td div.message-content,
+form.urlap table tr td div.entry-content {
+	background-color: #FFF;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+form.urlap table tr td div.message-content div,
+form.urlap table tr td div.entry-content div {
+	background-color: #FFF;
+	border: 1px solid transparent;
+	display: none;
+	height: 180px;
+	left: 0;
+	line-height: 1;
+	margin: 0;
+	overflow: auto;
+	padding: 7px;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+form.urlap table tr td div.message-content div i,
+form.urlap table tr td div.entry-content div i {
+	margin: 0;
+}
+
+form.urlap table tr td textarea[name='comment'] {
+	border: none;
+	font: 14px/1 Tahoma, Helvetica, Arial, Sans-Serif;
+	height: 28px; /* pixel méret + (padding * 2) */
+	overflow: hidden;
+	margin: 0;
+	padding: 7px;
+	resize: none;
+	width: 100%;
+}
+
+/**
+@Overlay
+**/
+.overlay {
+	background-color: rgba(0, 0, 0, 0.35);
+	display: none;
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 2;
+}
+
+.overlay .overlay-content {
+	background-color: #F9F9F9;
+	border: 1px solid #CCC;
+	display: none;
+	height: 200px;
+	margin: 0 auto;
+	width: 350px;
+}
+
+.overlay .overlay-content #loader {
+	background: url("../images/hourglass.gif") no-repeat center;
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	width: 100%;
+}
+
+.overlay .overlay-content iframe {
+	border: none;
+	display: none;
+	height: 200px;
+	overflow: hidden;
+	width: 350px;
+}
+
+/**
+@Iframe
+**/
+.window {
+	background-color: #F9F9F9;
+}
+
+.window.content {
+	height: 200px;
+	overflow: hidden;
+	position: relative;
+	width: 350px;
+}
+
+.window.content div {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+.window.content div button {
+	background-color: #2972A3;
+	border: none;
+	bottom: 10px;
+	color: #FFF;
+	cursor: pointer;
+	position: absolute;
+	margin: 0;
+	padding: 6px 12px;
+	right: 10px;
+}
+
+.window.content div span {
+	color: #2972A3;
+	display: table-cell;
+	/* font-size: 20px; */
+	padding: 35px 10px 0 10px;
+	text-align: center;
+	vertical-align: top;
+	width: 100%;
+}
+
+.window.content div span em {
+	color: #000;
+	display: block;
+	font-size: 14px;
+	margin-top: 10px;	
+}
+
+@media screen and (max-width: 960px) {
+	.cookie {
+		font-size: 12px;
+	}
+
+	.cookie a {
+		padding: 3px 6px;
+	}
+
+	form.urlap table {
+		width: 97%;
+	}
+	
+	ul.felso li:first-child {
+		display: none;
+	}
+
+	ul.felso li:last-child {
+		width: 100%;
+	}
+
+	ul.kecseges li {
+		display: block;
+	}
+
+	ul.kecseges li:first-child {
+		width: auto;
+	}
+
+	ul.kecseges li:last-child {
+		margin-left: 10px;
+		width: auto;
+	}
+	
+	ul.kecseges li.news-bar div {
+		margin-right: 0;
+		width: auto;
+	}
+	
+	ul.kecseges li.info-bar div {
+		width: auto;
+	}
+	/*
+	div.labjegyzet li {
+		display: block;
+		margin: 0 20px 10px 20px;
+		text-align: left;
+	}
+	*/
+}
+
+@media screen and (max-width: 660px) {
+	ul.kecseges li .google-maps {
+		float: none;
+	}
+	ul.kecseges li .google-maps iframe {
+		height: auto;
+		width: 240;
+	}
+}
+
+@media screen and (max-width: 460px) {
+	ul.felso li dl {
+		font-size: 11px;
+	}
+	
+	ul.felso li dl dt + dt + dt {
+		display: none;
+	}
+
+	ul.kozepso li h2 {
+		font-size: 16px;
+	}
+
+	ul.kozepso li h2 p {
+		font-size: 24px;
+	}
+
+	ul.kecseges li.info-bar div h3 {
+		font-size: 13px;
+	}
+
+	ul.kecseges li .google-maps iframe {
+		height: auto;
+		width: 160px;
+	}
+	
+	div.labjegyzet li {
+		font-size: 11px;
+	}
+}
