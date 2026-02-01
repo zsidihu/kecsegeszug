@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Csak a kifejezetten kártékony vagy "lopós" botokat tiltsd, ha akarod:
+User-agent: Bytespider
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+Sitemap: https://kecsegeszug.eu/sitemap.xml
